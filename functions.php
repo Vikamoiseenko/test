@@ -8,4 +8,10 @@ Description: This is my demo theme for the WEB170 WordPress class.
 Version: 1.0
 */
 
+//Register my menus
+register_nav_menus(array(
+'main-menu' => __( 'Main' ),
+));
+//
+
 ?>

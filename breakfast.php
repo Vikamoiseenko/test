@@ -10,10 +10,6 @@
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
 <!-- Stylesheet goes here -->
-
-<!-- Mike Was Here (poop) -->
-
-
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php bloginfo('template_directory'); ?>/css/flexslider.css" rel="stylesheet" type="text/css" />
 <!-- End Styles -->
@@ -35,7 +31,6 @@ $(window).load(function() {// enable function upon window load
 });
 </script>
 <!-- End Toggle Menu -->
-
 <!-- Start WP Head -->
 <?php wp_head(); ?>
 <!-- End WP Head -->
@@ -54,17 +49,17 @@ $(window).load(function() {// enable function upon window load
 <div class="navigationitems">
 <nav id="mainnav" class="main">
 <ul>
-<li class="current"><a href="index.html">Home</a></li>
+<li ><a href="index.html">Home</a></li>
 <li ><a href="about.php">About Us</a></li>
 <li ><a href="menu.html">Menu</a>
 <ul>
-<li ><a href="breakfast.html">Breakfast</a></li>
-<li ><a href="#">Sandwiches</a></li>
-<li ><a href="#">Rice Bowl</a></li>
-<li ><a href="#">Cofee</a></li>
-<li ><a href="#">Fresh Juices</a></li>
-<li ><a href="#">Pastries and cookies</a></li>
-<li ><a href="#">Special of the day!</a></li>
+<li class="current"><a href="breakfast.php">Breakfast</a></li>
+<li class="current"><a href="#">Sandwiches</a></li>
+<li class="current"><a href="#">Rice Bowl</a></li>
+<li class="current"><a href="#">Cofee</a></li>
+<li class="current"><a href="#">Fresh Juices</a></li>
+<li class="current"><a href="#">Pastries and cookies</a></li>
+<li class="current"><a href="#">Special of the day!</a></li>
 </ul>
 </li>
 <li ><a href="#">Blog</a></li>
@@ -76,30 +71,91 @@ $(window).load(function() {// enable function upon window load
 <!-- Begin Content -->
 </header>
 </div>
-<!-- Begin Flex Slider -->
-<div id="cont">
-<div id="content">
- <div class="flexslider">
-<ul class="slides">
-<li><img src="<?php bloginfo('template_directory'); ?>/images/m.jpg" width="940" height="300" alt="Image One"></li>
-<li><img src="<?php bloginfo('template_directory'); ?>/images/strawberry.jpg" width="940" height="300" alt="Image Two"></li>
-<li><img src="<?php bloginfo('template_directory'); ?>/images/sandwich.jpg" width="940" height="300" alt="Image Three"></li>
+<div id="breadcrumb"><a href="index.html">Home</a> > <a href="menu.html">Menu</a>
+</div>  <!-- close breadcrumb -->
+<div id="middle">
+<!-- Begin Content -->
+<div id="left_col">
+<!--
+<nav id="nav_side">
+<ul>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="breakfast.html">Breakfast</a></li>
+<li><a href="#">Sandwiches</a></li>
+<li><a href="#">Lunch</a></li>
+<li><a href="#">Beverages</a></li>
+<li><a href="#">Pastries</a></li>
 </ul>
-</div>
-</div>
-</div>
-<!-- End Flex Slider -->
-<!-- Begin Text -->
-<div id="wid">
-<div id="widgets">
-<section class="widget-item">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //start the loop ?>
-<h1><a href="<?php the_permalink(); ?>"><?php the_title(); //get the page or posting title ?></a></h1>
-<?php the_content(''); //get page or posting written content ?>
-<?php endwhile; endif; //end the loop ?>
-</section>
-</div>
-</div>
+</nav> -->
+<?php wp_list_pages(''); ?>
+</div> <!-- closed LEFT_DIV -->
+
+<!-- Begin Content -->
+<div id="spotlight">
+<h2 class="menu">OMELETTES</h2>
+<h3 class="menu">Don Juan</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+<h3 class="menu">Bacon, Ham or Sausage & Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+        
+<h3 class="menu">Chef's</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+        
+<h3 class="menu">Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+                
+<h3 class="menu">Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+        
+<h3 class="menu">Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+        
+<h3 class="menu">Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+                
+<h3 class="menu">Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+        
+<h3 class="menu">Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+                        
+<h3 class="menu">Cheese</h3>
+<dl>
+<dt>Chorizo, tomato, onion, eggs, spinach. Cheddar cheese and side of toast and fruits</dt>
+<dd>$11.99</dd>
+</dl>
+           
+</div>  
+</div>  <!-- closed MIDDLE -->
+<div class="clear">&nbsp;</div>
+
 <!-- End Text -->
 <!-- Begin Sidebar -->
 <!-- End Sidebar -->
@@ -133,9 +189,9 @@ $(window).load(function() {// enable function upon window load
 
 <ul class="footer_title">
 <li class="footer_title">Inside Our Site</li>
-<li><a href="index.html">Home</a></li>
+<li><a href="template.php">Home</a></li>
 <li><a href="about.php">About Us</a></li>
-<li><a href="menu.html">Menu</a></li>
+<li><a href="menu.php">Menu</a></li>
 <li><a href="blog.php">Blog</a></li>
 <li><a href="contact.php">Contact Us</a></li>
 </ul>
@@ -149,9 +205,6 @@ $(window).load(function() {// enable function upon window load
 <!-- End Footer -->
 </footer>
 </div>
-<!-- Start WP footer -->
-<?php wp_footer(); ?>
-<!-- Start WP footer -->
 
 </body>
 </html>
