@@ -16,11 +16,11 @@
 <div id="wid">
 <div id="widgets">
 <section class="widget-item">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //start the loop ?>
 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); //get the page or posting title ?></a></h1>
 <?php the_content(''); //get page or posting written content ?>
-<?php endwhile; endif; //end the loop ?>
-<small>index.php</small>
+<p>The page is not found</p>
+<?php get_search_form(); ?>
+<small>404.php</small>
 </section>
 </div>
 </div>

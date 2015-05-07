@@ -10,10 +10,7 @@
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
 <!-- Stylesheet goes here -->
-
 <!-- Mike Was Here (poop) -->
-
-
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php bloginfo('template_directory'); ?>/css/flexslider.css" rel="stylesheet" type="text/css" />
 <!-- End Styles -->
@@ -73,7 +70,6 @@ $(window).load(function() {// enable function upon window load
 </ul>
 </nav>-->
 <!-- End Navigation -->
-
 <!-- Begin new Navigation -->
 <?php wp_nav_menu(
 array(
@@ -85,9 +81,7 @@ array(
 ); 
 ?>
 </div> 
-
 <!-- End new Navigation -->
-
 <!-- Begin Content -->
 </header>
 </div>
