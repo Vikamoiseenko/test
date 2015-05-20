@@ -37,7 +37,7 @@
 </div> <!--closed footer_content -->
 <ul>
 <li class="footer_title">&copy;2015 Cafe Kopi. All rights reserved.</li>
-<li class="footer_title"> <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> and <a href="http://validator.w3.org/check/referer">Valid HTML5</a></li>
+<li class="footer_title"> <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> and <a href="http://validator.w3.org/check/referer">Valid HTML5</a> <?php wp_loginout(); ?></li>
 </ul>
 <!-- End Footer -->
 </footer>

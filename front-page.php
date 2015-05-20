@@ -1,15 +1,8 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
 <!-- Begin Flex Slider -->
 <div id="cont">
 <div id="content">
- <div class="flexslider">
-<ul class="slides">
-<li><img src="<?php bloginfo('template_directory'); ?>/images/m.jpg" width="940" height="300" alt="Image One"></li>
-<li><img src="<?php bloginfo('template_directory'); ?>/images/strawberry.jpg" width="940" height="300" alt="Image Two"></li>
-<li><img src="<?php bloginfo('template_directory'); ?>/images/sandwich.jpg" width="940" height="300" alt="Image Three"></li>
-</ul>
-</div>
-</div>
+<?php add_flexslider(); ?></div>
 </div>
 <!-- End Flex Slider -->
 <!-- Begin Text -->
