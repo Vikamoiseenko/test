@@ -202,45 +202,45 @@ color: #C79900; /* gold */
 	margin: 10px auto;
 }
 #widgets section.widget-item {
-width: 300px;
-float: left;
-margin-right: 20px;
+	width: 300px;
+	float: left;
+	margin-right: 20px;
 }
 #widgets section.widget-item:last-child {
-margin-right: 0px;
+	margin-right: 0px;
 }
 #text {
-width: 920px;
-float: left;
-margin-top: 16px;
-padding-bottom: 10px;
+	width: 920px;
+	float: left;
+	margin-top: 16px;
+	padding-bottom: 10px;
 }
 #text label {
-display: block;
-margin-bottom: 4px;
-font-weight: bold;
+	display: block;
+	margin-bottom: 4px;
+	font-weight: bold;
 }
 #text input, #text select, #text textarea {
-display: block;
-margin-bottom: 16px;
+	display: block;
+	margin-bottom: 16px;
 }
 #sidebar {
-width: 300px;
-float: right;
-margin-top: 16px;
+	width: 300px;
+	float: right;
+	margin-top: 16px;
 }
 #sidebar ul {
-padding-left: 0px; /* overwrite general padding */
+	padding-left: 0px; /* overwrite general padding */
 }
 #sidebar ul li {
-list-style: none; /* removes default bullet */
-background-image:url(../images/bg-bullet.png);
-background-position: left; /* positioned to the left */
-background-repeat: no-repeat; /* do not repeat background */
-padding-left: 10px; /* creates padding so we can see the background image */
+	list-style: none; /* removes default bullet */
+	background-image:url(../images/bg-bullet.png);
+	background-position: left; /* positioned to the left */
+	background-repeat: no-repeat; /* do not repeat background */
+	padding-left: 10px; /* creates padding so we can see the background image */
 }
 #footer {
-margin: 50px auto 0 auto;
+	margin: 50px auto 0 auto;
 	background-color: #340902;
 	text-align:center;
 	padding-bottom:5px;
@@ -667,7 +667,16 @@ a img.aligncenter {
 	width: 1px;
 	overflow: hidden;
 }
+#widgets article#post-excerpt {
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
 
+#widgets article#post-excerpt p {
+	display: inline;
+	float:right;
+}
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
@@ -689,7 +698,7 @@ a img.aligncenter {
 	/* Above WP toolbar. */
 }
 
-blogimg.attachment-thumbnail{
+#widgets blogimg.attachment-thumbnail{
    float: left;
     margin: 0 20px 0 0;
 }
