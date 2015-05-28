@@ -21,6 +21,14 @@
     <?php endif; ?>
     </div>
     <!-- End Sub-Navigation -->
+    
+<!-- Begin Quote -->
+<?php if (get_post_meta($post->ID, 'Quote', true)) : ?>
+<blockquote><?php echo (get_post_meta($post->ID, 'Quote', true)); ?></blockquote>
+<?php endif; ?>
+<!-- End Quote -->
+    <!-- Begin The sidebar -->
+<?php dynamic_sidebar(); ?>    
        
 </div>
 <!-- End Sidebar -->
