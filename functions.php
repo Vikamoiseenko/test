@@ -29,6 +29,31 @@ register_sidebar(array(
 //create pege excerpts
 add_post_type_support('page', 'excerpt');
 //
+//Get my title tag
+function get_my_title_tag() {
+
+	global $post; 
+	
+	if(is_front_page()) {//the front page
+		bloginfo('description');
+	}
+	elseif (is_page() || is_single()) {//page and postings
+		the_title(); //title of page posting
+	}
+	
+	else {
+		bloginfo('description'); 
+	}
+	if ($post->post_parent) { //if there is a parent
+		echo ' | ';
+		echo get_the_title($post->post_parent); 
+		}
+	echo ' | '; //separator with space
+	bloginfo('name'); //site name
+	echo ' | ';
+	echo 'Seattle, WA';
+	}
+
 //thanks Mike for flexslider function. It's working, so cool)
 function add_flexslider() {    
     $attachments = get_children(array('post_parent' => get_the_ID(), 'order' => 'ASC', 'orderby' => 'menu_order', 'post_type' => 'attachment', 'post_mime_type' => 'image','caption' => $attachment->post_excerpt, ));
